@@ -23,8 +23,18 @@ jobs:
             - name: Install apt packages
               run: |
                   sudo apt-get install libeigen3-dev libtinyxml-dev
+            - name: Install Pytest
+              run: |
+                python -m pip install --upgrade pip setuptools wheel
+                pip install Cython
+                pip install pytest hacking
             - name: Install latest scikit robot from source
               run: |
                   git clone https://github.com/iory/scikit-robot
                   cd scikit-robot
                   pip install . 
+                  pytest
+                  rm -rf scikit-robot
+            - nane: pytest
+              run: |
+                  pytest
