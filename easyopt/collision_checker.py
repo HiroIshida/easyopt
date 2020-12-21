@@ -6,9 +6,9 @@ import trimesh
 
 from skrobot.coordinates import CascadedCoords
 from skrobot.model.primitives import Sphere
-from skrobot.planner.swept_sphere import compute_swept_sphere
-from skrobot.planner.utils import forward_kinematics_multi
-from skrobot.planner.utils import get_robot_config
+from easyopt.swept_sphere import compute_swept_sphere
+from easyopt.utils import forward_kinematics_multi
+from easyopt.utils import get_robot_config
 
 
 class SweptSphereSdfCollisionChecker(object):
@@ -58,7 +58,6 @@ class SweptSphereSdfCollisionChecker(object):
         self.coll_link_name_list.append(coll_link)
 
         col_mesh = coll_link.collision_mesh
-        assert type(col_mesh) == trimesh.base.Trimesh
 
         centers, R = compute_swept_sphere(col_mesh)
         sphere_list = []

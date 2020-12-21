@@ -1,7 +1,7 @@
 # flake8: noqa
 
-from collision_checker import SweptSphereSdfCollisionChecker
-from sqp_based import sqp_plan_trajectory
+from easyopt.collision_checker import SweptSphereSdfCollisionChecker
+from easyopt.sqp_based import sqp_plan_trajectory
 
-from tinyfk_collision_checker import TinyfkSweptSphereSdfCollisionChecker
-from tinyfk_sqp_based import tinyfk_sqp_plan_trajectory
+from easyopt.tinyfk_collision_checker import TinyfkSweptSphereSdfCollisionChecker
+from easyopt.tinyfk_sqp_based import tinyfk_sqp_plan_trajectory

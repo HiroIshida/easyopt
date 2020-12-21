@@ -1,6 +1,6 @@
 import tinyfk
 
-from skrobot.planner import SweptSphereSdfCollisionChecker
+from easyopt.collision_checker import SweptSphereSdfCollisionChecker
 
 
 class TinyfkSweptSphereSdfCollisionChecker(SweptSphereSdfCollisionChecker):

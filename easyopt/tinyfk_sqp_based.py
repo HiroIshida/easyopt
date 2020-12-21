@@ -1,6 +1,6 @@
 import numpy as np
 
-from skrobot.planner.sqp_based import _sqp_based_trajectory_optimization
+from easyopt.sqp_based import _sqp_based_trajectory_optimization
 
 
 def tinyfk_sqp_plan_trajectory(collision_checker,
