@@ -8,7 +8,7 @@ except ImportError:
     # in python2
     from repoze.lru import lru_cache
 
-from skrobot.planner.utils import scipinize
+from easyopt.utils import scipinize
 
 
 def sqp_plan_trajectory(collision_checker,
